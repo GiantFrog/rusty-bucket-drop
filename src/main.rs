@@ -218,8 +218,8 @@ fn main() {
 
 pub struct DropPlugin;
 impl Plugin for DropPlugin {
-    fn build(&self, app: &mut App) {
-        app.insert_resource(GameStats::new())
+    fn build(&self, drop: &mut App) {
+        drop.insert_resource(GameStats::new())
             .insert_resource(DropTimer(Timer::from_seconds(0.9, TimerMode::Repeating)))
             .add_plugins(InputManagerPlugin::<BucketAction>::default())
             .add_systems(Startup, setup)

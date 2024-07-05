@@ -23,8 +23,7 @@ bevy = { version = "0.12.0", default-features = false, features = [
     "jpeg",
     "mp3",
     "wav",
-    "wayland",
-    "x11"
+    "wayland"
 ] }
 bevy_kira_audio = { version = "0.18.0", features = ["mp3", "wav"] }
 leafwing-input-manager = "0.11.1"
@@ -36,3 +35,6 @@ opt-level = 3
 
 [profile.release]
 lto = "thin"
+
+[target.wasm32-unknown-unknown]
+runner = "wasm-server-runner"

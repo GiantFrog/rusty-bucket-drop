@@ -2345,18 +2345,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e53debba6bda7a793e5f99b8dacf19e626084f525f7829104ba9898f367d85ff"
 
 [[package]]
-name = "mio"
-version = "0.8.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "927a765cd3fc26206e66b296465fa9d3e5ab003e651c1b3c060e7956d96b19d2"
-dependencies = [
- "libc",
- "log",
- "wasi",
- "windows-sys 0.48.0",
-]
-
-[[package]]
 name = "naga"
 version = "0.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4093,12 +4081,10 @@ dependencies = [
  "instant",
  "libc",
  "log",
- "mio",
  "ndk",
  "objc2",
  "once_cell",
  "orbclient",
- "percent-encoding",
  "raw-window-handle",
  "redox_syscall",
  "sctk-adwaita",
@@ -4110,7 +4096,6 @@ dependencies = [
  "wayland-scanner",
  "web-sys",
  "windows-sys 0.45.0",
- "x11-dl",
 ]
 
 [[package]]
@@ -4120,17 +4105,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "037711d82167854aff2018dfd193aa0fef5370f456732f0d5a0c59b0f1b4b907"
 dependencies = [
  "memchr",
-]
-
-[[package]]
-name = "x11-dl"
-version = "2.21.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "38735924fedd5314a6e548792904ed8c6de6636285cb9fec04d5b1db85c1516f"
-dependencies = [
- "libc",
- "once_cell",
- "pkg-config",
 ]
 
 [[package]]
